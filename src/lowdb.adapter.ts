@@ -70,12 +70,13 @@ export class LowDbAdapter<T extends Model<T>> implements DatastoreAdapter<T> {
       }
     }
   }
+
   async stream(callback: (item: T) => void): Promise<void> {
     if (this.db == null) {
       throw Error('Database is not open. Perhaps you forgot to call open()?')
     }
     else {
-      const items = await this.db.value()
+      const items = this.db.value()
       for (const item of Object.values(items)) {
         callback(this.convertToClass(item as object))
       }
