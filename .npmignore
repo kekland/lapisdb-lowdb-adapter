@@ -1,0 +1,9 @@
+/.vscode/
+/src/
+tsconfig.json
+tslint.json
+webpack.config.js
+/build/
+/database/
+/benchmark/
+/docs/

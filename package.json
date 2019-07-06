@@ -1,0 +1,25 @@
+{
+  "name": "lapisdb-lowdb-adapter",
+  "version": "0.0.0",
+  "description": "A LowDB adapter for LapisDB",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kekland/lapisdb-lowdb-adapter.git"
+  },
+  "keywords": [
+    "lapisdb",
+    "lowdb",
+    "nodejs",
+    "typescript"
+  ],
+  "author": "kekland <kk.erzhan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kekland/lapisdb-lowdb-adapter/issues"
+  },
+  "homepage": "https://github.com/kekland/lapisdb-lowdb-adapter#readme"
+}
