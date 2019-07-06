@@ -18,6 +18,7 @@ const databaseName = 'test'
 const directory = './database'
 
 const adapter = new LowDbAdapter(MyModel, {name: databaseName, directory: directory})
+await adapter.open() // <-- this is important
 
 const datastore = new Datastore<Planet>('test', adapter)
 ```
